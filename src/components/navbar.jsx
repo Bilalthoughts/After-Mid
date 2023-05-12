@@ -90,6 +90,7 @@ export default function Navbar() {
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 
+                <Link to={"/ask question"}>
                 <button
                   type="button"
                   className=" border rounded-full bg-gray-800  mx-3 text-gray-300 font-bold p-2 "
@@ -97,16 +98,19 @@ export default function Navbar() {
                   <span className="sr-only">View notifications</span>
                   Ask Question
                 </button>
+                </Link>
                 <button
                   type="button"
                   className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none   "
                 >
                   <span className="sr-only">View notifications</span>
                   
-                  <span class="relative inline-block ml-8">
+                 <Link to={'/Notification page'}>
+                 <span class="relative inline-block ml-8">
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
                   <span class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">99</span>
 </span>
+                 </Link>
 
 
 

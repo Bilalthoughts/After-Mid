@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import MonetizationBar from "../components/monetizationBar";
 
 const ProfilePage = () => {
   const [openAbout, setOpenAbout] = useState("");
@@ -54,40 +55,7 @@ const ProfilePage = () => {
               {/* End of profile card */}
               <div className="my-4" />
               {/* Friends card */}
-              <div className="bg-white p-3 hover:shadow">
-                <div className="flex items-center space-x-3 font-semibold text-gray-900 text-xl leading-8">
-                  <span className="border-b border-gray-400 pb-1">
-                    Selected categories
-                  </span>
-                </div>
-                <div className="grid grid-cols-3">
-                  <div className="text-center my-2">
-                    <a href="#" className="text-main-color ">
-                      Education
-                    </a>
-                  </div>
-                  <div className="text-center my-2">
-                    <a href="#" className="text-main-color ">
-                      Education
-                    </a>
-                  </div>
-                  <div className="text-center my-2">
-                    <a href="#" className="text-main-color ">
-                      Education
-                    </a>
-                  </div>
-                  <div className="text-center my-2">
-                    <a href="#" className="text-main-color ">
-                      Education
-                    </a>
-                  </div>
-                  <div className="text-center my-2">
-                    <a href="#" className="text-main-color ">
-                      Education
-                    </a>
-                  </div>
-                </div>
-              </div>
+             <MonetizationBar/>
               {/* End of friends card */}
             </div>
             {/* Right Side */}

@@ -16,6 +16,8 @@ import HireMeCard from './components/HireMeCard';
 import HireMeForm from './components/HireMeForm';
 import HireFormPage from './pages/hireForm';
 import HireMePage from './pages/hireMePage';
+import NotificationPage from './pages/notificationPage';
+import QnAPage from './pages/QnAPage';
 
 
 
@@ -50,6 +52,10 @@ const router = createBrowserRouter([
         element: <HireMePage />,
       },
       {
+        path: "Notification page",
+        element: <NotificationPage />,
+      },
+      {
         path: "HireMe Form",
         element: <HireFormPage />,
         // element: <HireFormPage />,
@@ -57,6 +63,14 @@ const router = createBrowserRouter([
       {
         path: "profilepage",
         element: <ProfilePage />,
+      },
+      {
+        path: "QnAPage",
+        element: <QnAPage />,
+      },
+      {
+        path: "ask question",
+        element: <QnAPage />,
       },
       
     ],
