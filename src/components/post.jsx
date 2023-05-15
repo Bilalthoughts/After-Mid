@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import Pagination from "./pagination";
 
 
 const Post = ()=>{
@@ -12,7 +14,7 @@ const Post = ()=>{
         <div className="max-w-4xl  px-5 md:px-10 my-6 py-6 bg-white rounded-lg shadow-2xl">
   <div className="flex justify-between items-center">
     <span className="font-light text-gray-600">mar 10, 2019</span>
-    <a className="px-2 py-1 bg-gray-600 text-gray-100 font-bold rounded hover:bg-gray-500" href="#">Answer</a>
+    <Link to={'/AnswerPage'}  className="px-2 py-1 bg-gray-600 text-gray-100 font-bold rounded hover:bg-gray-500" >Answer</Link>
   </div>
   <div className="my-2">
     <a className="text-xl  text-gray-700 font-bold hover:text-gray-600" href="#">Accessibility tools for designers and developers</a>
@@ -63,6 +65,7 @@ const Post = ()=>{
     </div>
   
   </div>
+
 </div>
         
         </>

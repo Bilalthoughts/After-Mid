@@ -38,7 +38,7 @@ const QnAPage = () => {
             </button>
             {showCategories && (
               <div className="grid grid-cols-2 gap-4 mt-2 overflow-y-auto max-h-32">
-                {categories.slice(0, 4).map((category) => (
+                {categories.map((category) => (
                   <Category
                     key={category.name}
                     name={category.name}

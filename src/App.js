@@ -18,6 +18,7 @@ import HireFormPage from './pages/hireForm';
 import HireMePage from './pages/hireMePage';
 import NotificationPage from './pages/notificationPage';
 import QnAPage from './pages/QnAPage';
+import AnswerPage from './pages/answerPage';
 
 
 
@@ -67,6 +68,10 @@ const router = createBrowserRouter([
       {
         path: "QnAPage",
         element: <QnAPage />,
+      },
+      {
+        path: "answerPage",
+        element: <AnswerPage />,
       },
       {
         path: "ask question",

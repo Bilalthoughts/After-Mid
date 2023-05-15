@@ -3,6 +3,7 @@ import CategoriesName from "../components/categoriesName";
 import Popup from "../components/PopupDisplay";
 import Post from "../components/post";
 import PostSearch from "../components/postSearch";
+import Pagination from "../components/pagination";
 
 const HomeContainer = ()=>{
 
@@ -56,8 +57,7 @@ const HomeContainer = ()=>{
     <Post/>
 
 
-
-
+    <Pagination/>
 
 
   </div>
@@ -67,12 +67,12 @@ const HomeContainer = ()=>{
     <h1 className="font-bold border-b my-3">Sell Services</h1>
 <p>Sign up for free, answer the questions, and offer your work to our global audience.</p>
 <Popup/>
+
 </div>
 
   </div>
 </div> 
-    
-    </div>       </>
+    </div>     </>
     )
 }
 
